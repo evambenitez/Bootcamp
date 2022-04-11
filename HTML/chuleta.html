@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Titulo de la barra de navegación, aqui tambien el favicon -->
     <title>Proyecto Bootcamp</title>
 </head>
@@ -14,10 +15,9 @@
 <body>
 
     <!-- Títulos / Headings/ los h con relevancia numerada-->
-    <h1>Bootcamp</h1> 
-    
-    <hr>  <!-- linea separadora con hr-->
-    
+    <h1>Bootcamp Full Stack Web Developer</h1>
+    <hr> <!-- linea separadora con hr-->
+
     <h2>Titulo 2</h2>
     <h3>Titulo 3</h3>
     <h4>Titulo 4</h4>
@@ -26,19 +26,225 @@
 
     <!-- utilizamos target="_blank" para abrir enlace en nueva ventana -->
     <a href="https://google.com" target="_blank">Buscador Google</a>
-   
-    
-    <br>  <!--linea en blaco con br-->
-   
+
+
+    <br>
+    <!--linea en blaco con br-->
+
     <a href="Blog.html">Blog</a>
 
-    <p>Mi primer párrafo</p>  <!--parrafo con p-->
-    <p>Mi segundo párrafo</p> 
+    <p>Mi primer párrafo</p>
+    <!--parrafo con p-->
+    <p>Mi segundo párrafo</p>
+
+    <b></b>
+    <!--Para negrita estandar-->
+    <strong></strong>
+    <!--Para negrita relevante en SEO-->
+    <em>Letra en cursiva</em>
+    <!--Letra cursiva con em-->
+    <s>Tachar el texto</s>
+    <!--Tachar el texto con s-->
+    <!--Usamos span class="algo" para seleccionar una frase concreta y poder darle un formato concreto-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="Algo">Sint sapiente eos iure quasi veniam
+            temporibus,</span> odio
+        deleniti exercitationem ratione sed.</p>
+
+    <p>Lorem ipsum dolor sit amet <b>consectetur adipisicing</b> elit. Quaerat debitis eligendi repudiandae quasi facere
+        quam,
+        placeat omnis saepe veniam dignissimos natus pariatur, iste possimus in ea sit labore autem sed modi sint. Eos
+        mollitia nisi iure sequi libero architecto, atque sapiente porro laudantium, perspiciatis tempora earum qui
+        unde. 
+    </p>
+
+    <!--Parrafo con formato predefinido pre-->
+    <pre>Lorem ipsum dolor sit amet <b>consectetur adipisicing</b>  
+        elit. 
+        Quaerat debitis eligendi repudiandae quasi facere quam,
+        placeat omnis saepe veniam dignissimos natus pariatur, 
+        iste possimus in ea sit labore autem sed modi sint. Eos
+        mollitia nisi iure sequi libero architecto, atque sapiente 
+        porro laudantium, perspiciatis tempora earum qui
+        unde.
+     </pre>
+
+    <!--Con sub ponemos los subíndices-->  <!--Con sup ponemos los superíndices--> <!--Con var indicamos variables matemáticas-->
+
+    <p>La molécula preferida de cualquier desarrollador es C<sub>8</sub>H<sub>10</sub>N<sub>3</sub></p>
+
+    <p>Ecuación del teorema de pitágoras:</p>
+    <p><var>a</var><sup>2</sup>+<var>b</var><sup>2</sup>=<var>c</var><sup>2</sup></p>
+
+    <!--Con wrap y f1 hacemos lo siguiente-->
+    <footer>
+        <p>Ahora voy a hacer un pie de pagina utilizando wrap para englobar toda esta frase del tiron.
+            Selecciono el texto, doy a F1, pongo wrap y la etiqueta que quiero asignar, por ejemplo,
+            footer en este caso.</p>
+    </footer>
    
+    <!--Con time datetime podemos programar horas y fechas-->
+<p>Nuestro horario es de lunes a viernes de <time datetime="09:00">09:00</time> a <time datetime="14:00">14:00</time> horas</p>
+
+<br><hr><br>  <!--Espacio, linea separadora y espacio-->
+
+<!-- Bloque de Contenedores / Container : ctrl + shif 7 para comentar esta frase -->
+
+<nav>En nav metemos barra de navegación de nuestro sitio web, con enlaces que nos mueven por ella</nav>
+
+  <!-- Truco  Poniendo a*3 y tabulador, escribimos código para 3 enlaces -->
+<nav>
+    <a href=""></a><a href=""></a><a href=""></a>  
+</nav>
+
+<!-- Crear un boton -->
+<button>Login</button>
+
+<!-- Otro truco, Poniendo nav>a*3{enlace $} se escribe lo siguiente: -->
+<nav>
+    <a href="">enlace 1</a> <br>
+    <a href="">enlace 2</a> <br>
+    <a href="">enlace 3</a> <br>
+</nav>
+
+<!-- Truco .container>li*4 y tabulador, Creamos un div class container con 4 formularios -->
+<!-- div es un contenedor genérico y el más utilizado. -->
+<div class="container">
+    <li>Lista1</li>
+    <li>Lista2</li>
+    <li>Lista3</li>
+    <li>Lista4</li>
+</div>
+
+  <!-- Section engloba secciones del mismo tipo o temática, por ejemlo, artículos -->
+<!-- Truco, escrbiendo section>article>h1+p y enter, escribimos todo esto: -->
+<section>
+    <article>
+        <h1>Titulo del Artículo</h1>
+        <p>Contenido del artículo</p>
+    </article>
+    <a href="url">Leer más</a>
+</section>
+
+<aside>Se utiliza para menús laterales, se ubica realmente con css</aside>
+
+<!-- Tipos de listas - Ordenadas y desordenadas -->
+<!-- Desordernadas con ul -->
+<ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>Elemento 5</li>
+</ul>
+
+<!-- Listas ordenadas. con el atributo start indico por qué nº empieza la lista -->
+<ol start="500">
+    <li>elemento 1</li>
+    <li>elemento 2
+        <ol>
+            <li>otra lista</li>
+            <li>otra lista</li>
+        </ol>
+    </li>
+    
+    <li>elemento 3</li>
+</ol>
+
+   <!-- Tablas / Tables Tienen su cabecera: thead, su cuerpo tbody, tfood, tr (representa una fila de la tabla)
+th (representa la cabecera de cada columna de la tabla ) td (datos del body de la tabla)-->
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Edad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Eva Benitez</td>
+            <td>eva@gmail.com</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>Manuel Anaya</td>
+            <td>anaya@gmail.com</td>
+            <td>53</td>
+        </tr>
+        <tr>
+            <td>Maria Rodriguez</td>
+            <td>maria@gmail.com</td>
+            <td>67</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Edad</th>
+        </tr>
+    </tfoot>
+</table>
+
+<br><hr><br>
+
+<!-- Formularios simples, get y post-  Form - Entrada de datos-->
+<!-- Label es una etiqueta, representa el dato que pedimos al input, los relacionamos con un mismo id (dato único, no se repite).
+Tambien un name (dato que sí se puede repetir), que es el nombre del dato introducido, importante de cara al servidor. 
+El atributo maxlength determina la cantidad máxima de caracteres que podemos introducir en el input
+El atributo required significa campo obligatorio-->
+
+<form action="#"></form>
+
+<form action="" method="get">
+
+    <div class="inputblock">
+        <label for="nameinput">Nombre:(*)</label><br>
+        <input required type="text" id="nameinput" name="username" maxlength="15">
+    </div>
+<br>
+    <div class="inputblock">
+        <label for="lastnameinput">Apellidos:</label><br>
+        <input type="text" id="lastnameinput" name="lastname">
+    </div>
+<br>
+    <div class="inputblock">
+        <label for="emailinput">Email:</label><br>
+        <input type="email" id="emailinput" name="email">
+    </div>
+<br>
+    <div class="inputblock">
+        <label for="passwordinput">Contraseña:</label><br>
+        <input type="password" id="passwordinput" name="password">
+    </div>
+<br>
+    <div class="inputblock">
+        <label for="messagedinput">Comentarios:</label><br>
+        <textarea name="messageinput" id="messageinput" cols="30" rows="10"></textarea>
+    </div><br>
+
+    <div class="inputblock">
+        <label for="sex">Género</label><br>
+        <select name="sexinput" id="sexinput">
+            <option value="" hidden></option>
+            <option value="female">femenino</option>
+            <option value="male">masculino</option>
+            <option value="other">otro</option>
+        </select>
+    </div>
+    <br>
+<!-- Actualizar caché para el formulario ctrl + shif + r en el navegador-->
+
+<input id="ageinput" name="ageinput" type="number" value="42" min="0" max="120">
+<input type="date" name="" id=""><br>
+
+<input type="submit" value="Guardar">
+
+
+
+</form>
+
 </body>
+
 </html>
-
-    
-
-
-    
