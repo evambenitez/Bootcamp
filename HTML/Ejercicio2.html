@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2_HTML</title>
+</head>
+<body>
+    <h1><strong>Formulario de Registro</strong></h1>
+
+<form action="#" method="get">   
+    <fieldset>
+        <legend>Información personal</legend>
+            <div>
+                <label for="nameinput">Nombre:</label>
+                <input type="text" id="nameinput" name="username" placeholder="Elon">
+            
+                <label for="lastnameinput">Apellidos:</label>
+                <input type="text" id="lastnameinput" name="lastname" placeholder="Musk">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="ageinput">Edad</label>
+                <input id="ageinput" name="ageinput" type="number" value="40" min="0" max="120">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="emailinput">Email:</label>
+                <input type="email" id="emailinput" name="email" placeholder="nombre@email.com">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="passwordinput">Password:</label>
+                <input type="password" id="passwordinput" name="password" placeholder="*******">
+            </div>
+
+            <br>
+            
+            <fieldset>
+                <legend>Género</legend>
+                <div>
+                    <input type="radio" name="generoinput" id="femenino">
+                    <label for="femenino">Mujer</label><br>
+                </div>
+                <div>
+                    <input type="radio" name="generoinput" id="masculino">
+                    <label for="masculino">Hombre</label><br>
+                </div>
+                <div>
+                    <input type="radio" name="generoinput" id="otrogenero">
+                    <label for="otrogenero">Otro</label>
+                </div>
+            </fieldset>
+        
+            <br>
+
+            <div>
+                <label for="paisinput">País:</label>
+                <input type="text" id="paisinput" name="pais" placeholder="Introduce tu país">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="languageprogram">Lenguaje de programación</label>
+                <select name="languageprogram" id="languageprogram">
+                    <option value="javascript">Javascript</option>
+                    <option value="html">Html</option>
+                    <option value="css">CSS</option>
+                </select>
+            </div>
+
+            <br>
+<!-- Formulario desactivado con disabled y la opción de Codespace preseleccionada con checked -->
+            <fieldset disabled>
+                <legend>Selecciona tu academia de programación favorita</legend>
+                <div>
+                    <input checked type="radio" name="academyinput" id="Codespace">
+                    <label for="Codespace">Code Space Academy</label><br>
+                </div>
+                <div>
+                    <input type="radio" name="academyinput" id="academia1">
+                    <label for="academia1">Academia1</label><br>
+                </div>
+                <div>
+                    <input type="radio" name="academyinput" id="academia2">
+                    <label for="academia2">Academia2</label>
+                </div>
+            </fieldset>
+
+    </fieldset>
+
+    <br>
+
+    <div>
+        <input required type="checkbox" name="aceptacionemails" id="aceptacionemails">
+        <label for="">Acepto recibir cientos de miles de correos irrelevantes.</label>
+    </div>
+    <div>
+        <input required type="checkbox" name="aceptacionterminos" id="aceptacionterminos">
+        <label for="singleinput">Acepto los térmninos y condiciones.</label>
+    </div>
+
+    <br>
+
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Vaciar Formulario">
+    </div>
+
+</form>   
+</body>
+</html>

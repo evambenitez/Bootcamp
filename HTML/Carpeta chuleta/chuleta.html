@@ -227,6 +227,7 @@ El atributo required significa campo obligatorio-->
     <div class="inputblock">
         <label for="sex">Género</label><br>
         <select name="sexinput" id="sexinput">
+            <!-- el atributo hidden es para que por defecto no aparezca seleccinado nada. -->
             <option value="" hidden></option>
             <option value="female">femenino</option>
             <option value="male">masculino</option>
@@ -235,15 +236,138 @@ El atributo required significa campo obligatorio-->
     </div>
     <br>
 <!-- Actualizar caché para el formulario ctrl + shif + r en el navegador-->
+<!-- Seleccionar misma palabra de una vez Ctrl + shif + L -->
+<div class="inputBlock">
+    <label for="ageinput">Edad</label>
+    <input id="ageinput" name="ageinput" type="number" value="42" min="0" max="120">
+    
+    <label for="birthdayinput">Fecha de nacimiento</label>
+    <input type="date" name="birthdayinput" id="birthdayinput">
+</div>
 
-<input id="ageinput" name="ageinput" type="number" value="42" min="0" max="120">
-<input type="date" name="" id=""><br>
+<br><br>
+
+<div class="inputBlock">
+    <label for="cardbrandinput">Marca de tu coche</label>
+    <input type="text" id="cardbrandinput" name="cardbrand" list="carbrandlist">
+    <!-- Creamos con datalist y list en el input una listado predefinido 
+    relacionamos el id de datalist con list del input-->
+    <datalist id="carbrandlist">
+        <option value="Bmw">BMW</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Ford">Ford</option>
+        <option value="Renault">Renault</option>
+    </datalist>
+</div>
+
+<br><br>
+
+<!-- Agrupamos con fieldset (conjunto de campos), creamos un formulario dentro de un cuadro,
+Con legend podemos insertarle cierta información al usuario (ver en navegador)
+con disabled en fieldset desactivamos los formularios, ya no se puede escribir nada-->
+<!-- con placeholder aparece algo escrito de ejemplo, se borra al escribir. -->
+
+<fieldset disabled>
+    <legend>Información de tu pareja</legend>
+    <div class="inputblock2">
+        <label for="nameinput2">Nombre:(*)</label><br>
+        <input required type="text" id="nameinput2" name="username2" maxlength="15" placeholder="Eva">
+    </div>
+<br>
+    <div class="inputblock2">
+        <label for="lastnameinput2">Apellidos:</label><br>
+        <input type="text" id="lastnameinput2" name="lastname2" placeholder="Benítez">
+    </div>
+</fieldset>
+
+<!-- Tipo Radio - Con el input tipo radio podemos seleccionar (ver en navegador)
+deben coincidir sus id con sus for 
+Indicando mismo name, solo se podrá seleccionar uno de ellos-->
+<fieldset>
+    <legend>Estado civil</legend>
+    <div>
+        <input type="radio" name="civilstate" id="marriedinput">
+        <label for="marriedinput">Casado</label>
+    </div>
+    <div>
+        <input type="radio" name="civilstate" id="singleinput">
+        <label for="singleinput">Soltero</label>
+    </div>
+    <div>
+        <input type="radio" name="civilstate" id="divorcedinput">
+        <label for="divorcedinput">Divorciado</label>
+    </div>
+</fieldset>
+
+<!-- Tipo checkbox, deben coincidir el id y el for -->
+
+<fieldset>
+    <legend>Productos</legend>
+    <div>
+        <input type="checkbox" name="iphoneproduct" id="iphoneproduct">
+        <label for="">Iphone</label>
+    </div>
+    <div>
+        <input type="checkbox" name="macbookproduct" id="macbookproduct">
+        <label for="singleinput">Macbook Pro</label>
+    </div>
+    <div>
+        <input type="checkbox" name="airpodsproduct" id="airpodsproduct">
+        <label for="divorcedinput">Airpods</label>
+    </div>
+</fieldset>
+
+<!-- Input Tipo rango -->
+
+<label for="rangeinput">Seleccione cantidad</label>
+<input type="range" name="rangeinput" id="rangeinput">
+
+<br><br>
+
+<label for="fuellevel">Cantidad de gasolina</label>
+<meter min="0" max="100" id="fuellevel" value="60"></meter>
+
+<label for="progressinput">Progreso</label>
+<progress max="100" value="33" id="progressinput">60</progress>
+
+<br><br>
+
+<!-- Subir archivo o foto, con file -->
+<label for="fileinput">Subir un archivo</label>
+<input type="file" id="fileinput" name="fileinput">
+
+<br><br>
 
 <input type="submit" value="Guardar">
 
+<!-- Con input reset, reseteamos "vaciamos" lo anotado -->
 
+<input type="reset" value="Vaciar">
+
+<br><br>
+
+<!-- -hacer un boton -->
+
+<button>Click</button>
+
+<br><br>
 
 </form>
+
+<!-- Multimedia / Videos / Imágenes -->
+
+<!-- Etiqueta imagenes img. src es el archivo donde se encuentra la imagen y alt el nombre que le asigno -->
+<!-- con iframe podemos encrustar videos o documentos pdf, etc. -->
+<!-- con width determinamos ancho y con height el alto -->
+
+<img src="Imagenes/no-me-borres.jpeg" width="260" alt="no me borres">
+
+
+<iframe width="260" height="250" src="https://www.youtube.com/embed/zunRcH4nUPI" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
 
 </body>
 
