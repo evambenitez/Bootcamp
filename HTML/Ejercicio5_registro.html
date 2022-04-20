@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio5_registro</title>
+</head>
+<body background ="Imagenes_ejercicios/cabecera_web_ejercicio5.jpg">
+    <header>
+        <img src="Imagenes_ejercicios/logo_bombilla_idea.png" width="100" alt="logo_bombilla_idea"><br>
+        <nav>
+            <button>
+                <a href="http://127.0.0.1:5500/HTML/Ejercicio5_Mi_Web.html" target="_blank">Inicio</a>
+            </button>
+           
+            <button>
+                <a href="http://127.0.0.1:5500/HTML/Ejercicio5_login.html" target="_blank">Login</a>
+            </button>
+        </nav>
+    </header>
+    <br>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Datos personales</legend><br>
+            <div>
+                <label for="nameinput">Nombre:</label>
+                <input type="text" id="nameinput" name="username">
+            
+                <label for="lastnameinput">Apellidos:</label>
+                <input type="text" id="lastnameinput" name="lastname">
+            </div>
+            <br>
+            <div>
+                <label for="phoneinput">Teléfono:</label>
+                <input type="text" id="phoneinput" name="phone">
+
+                <label for="emailinput">Email:</label>
+                <input required type="email" id="emailinput" name="email">
+            </div>
+            <br>
+            <div>
+                <label for="userinput">Usuario:</label>
+                <input type="text" id="userinput" name="user">
+                
+                <label for="passwordinput">Password:</label>
+                <input required type="password" id="passwordinput" name="password">
+
+                <label for="passwordinput">Repite Password:</label>
+                <input required type="password" id="passwordinput" name="password">
+            </div>
+            <br>
+            <div>
+                <input required type="checkbox" name="aceptacionterminos" id="aceptacionterminos">
+                <label for="singleinput">Acepto los térmninos y condiciones.</label>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Vaciar Formulario">
+            </div>
+
+        </fieldset>
+        
+    </form>
+</body>
+</html>
