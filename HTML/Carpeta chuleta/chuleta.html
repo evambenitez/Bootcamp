@@ -438,9 +438,29 @@ Indicando mismo name, solo se podrá seleccionar uno de ellos-->
 
 <!-- Texto unicode, espacios, caracteres, etc -->
 a&nbsp;&nbsp;&nbsp;&nbsp;&#62;b
-<br><br>
+<br><br><br><br>
 
 <!-- Documentos - DOM -Conjunto de objetos, imprescindible para acceder a ellos-->
+<!-- Fin HTML -->
+
+<hr>
+
+<!-- CSS - Importante -->
+
+<!-- Aplicar estilos CSS directamente en Html "inline" Es mejor evitar hacerlos asi -->
+<a href="#" style="text-decoration: none;">Contacto</a>
+
+<!-- Css incrustado; dentro de la sección head, solo afectan a los elementos 
+    incrustados de dicha página.Debemos evitarlos también -->
+<style type="text/css">
+    p {
+        color:aqua;
+    }
+</style>
+
+<!-- Elementos CSS externos. Así se debe aplicar el CSS ---
+En cada archivo html sí debemos incluir nuestro CSS con esta regla-->
+<link rel="stylesheet" type="text/css" href="styles.css">
 
 
 </body>
