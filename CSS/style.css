@@ -1,0 +1,57 @@
+#primero {
+    /* Estilo imágenes */
+    height: 50vh;
+    background-image: url("../HTML/Imagenes_ejercicios/cabecera_blog.jpg");
+
+    background-position: center bottom;
+    /* background-attachment: fixed; */
+
+    /* Cuando la imagen es mas pequeña que el contenedor */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Margenes, desde el borde hacia afuera */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin: 30px;
+
+    /* Bordes */
+    border-bottom: seagreen;
+    border-top: yellow;
+    border-width: 5px;
+    border-style: solid;
+    /* Atajo, border: tamaño estilo color*/
+    border:5px solid seagreen;
+    border-bottom: 15px dotted red;
+
+    /* Padding, desde el borde hacia adentro */
+    padding-left: 100px;
+    padding-right: 100px;
+    /* Elegimos padding de todos los lados a la vez. */
+    padding: 100px 25px 50px 0px;
+
+    /* Tamaños relativos */
+    /* em: relativo al tamaño de letra del elemento
+       rem: relativo al tamaño de letra del elemento raiz
+       px:relativo a la resolución de pantalla
+       %:relativo al elemento padre
+       vw,vh (viewport ancho, viewport alto): relativos al tamaño de la ventana del navegador*/
+
+
+}    
+
+.empty {
+    height: 2000px;
+    background-color: red;
+}
+
+h1 {
+    border: 5px solid slateblue;
+}
+
+span {
+    padding-left: 50px;
+
+}

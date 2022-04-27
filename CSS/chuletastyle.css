@@ -1,0 +1,41 @@
+/* Tipos de Display (determina el espacio que ocupa el elemento): 
+none, inline, block, inline-block */
+/* El sombrerito ^ significa "empezar" */
+[class^="box"] {
+    background-color: steelblue;
+
+}
+/* Equivalente a lo anterior
+.box-0, .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+background-color: steelblue;
+} */
+
+/* Display none - oculta este div en el navegador. */
+.box-0 {
+    display: none;
+}
+
+/* Display inline-block - Se ponen en linea respetando propiedades como margenes, padings, etc.,
+El inline machacaría todas esas opciones */
+.box-3, .box-4, .box-3 p, .box- p {
+    display: inline-block;
+}
+
+/* Display inline - para poner en la misma línea 
+(lo hacemos con los div y con los parrafos, ya que ambos son bloques) */
+.box-5, .box-6, .box-5 p, .box-6 p {
+    display: inline;
+}
+
+/* <!-- Para centrar a lo ancho, ejemplo (eje x - horizontalmente) --> */
+.x-center {
+    background-color: teal;
+    height: 50px;
+    width: 25%;
+    /* con margin auto centramos horizontalmente por defecto */
+    margin:auto;
+
+}
+
+
+
