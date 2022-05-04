@@ -27,15 +27,174 @@ El inline machacaría todas esas opciones */
     display: inline;
 }
 
-/* <!-- Para centrar a lo ancho, ejemplo (eje x - horizontalmente) --> */
-.x-center {
+/* creamos la clase rectangle para asignar estos estilos a otros elementos */
+.rectangle {
     background-color: teal;
     height: 50px;
     width: 25%;
-    /* con margin auto centramos horizontalmente por defecto */
+}
+
+/* <!-- Para centrar a lo ancho, ejemplo (eje x - horizontalmente) --> */
+.x-center {
+        /* con margin auto centramos horizontalmente por defecto */
     margin:auto;
+}
+
+/* Posicion relativa */
+.pos-relative {
+    position:relative;
+    left: 100px;
+    top: -50px;
+    /* con z-index se controla la superposicion. Aqui no me tacha el texto del h2. 
+    se pone el negativo*/
+    z-index:-1;
+}
+
+/* Posicion absoluta (en relación al padre) (OJO!!! indicar position relative en el padre) */
+.pos-absolute-parent {
+    height: 300px;
+    border: 15px solid tomato;
+    position: relative;
+}
+
+.pos-absolute-child {
+    height: 50px;
+    width: 50px;
+    background-color: #333;
+    position: absolute;
+    /* Para centrarlo exactamente dentro del padre (hay formas más sencillas de hacerlo, con flexbox) */
+    top: 50%;
+    right: 50%;
+    margin-right: -25px;
+    margin-top: -25px;
+}
+/* Posicionamiento fijo - fixed */
+.pos-fixed {
+    background-color: #333;
+    padding: 20px 30px;
+    position: fixed;
+    right: 30px;
+    bottom: 5px;
+    /* Para superponerlo le asignamos el z-index */
+    z-index: 1;
+}
+
+.pos-fixed a {
+    color: white;
+    /* quitamos el subrayado por defecto del enlace */
+    text-decoration: none;
+}
+
+/* Posicionamiento Sticky (se mantiene fijo a partir de 
+que donde se lo indiquemos)*/
+.pos-sticky {
+    background-color: steelblue;
+    padding: 15px 25px;
+
+    position: sticky;
+    top: 0;
+
+    
+} 
+.pos-sticky a {
+    color: white;
+    /* quitamos el subrayado por defecto del enlace */
+    text-decoration: none;
 
 }
 
+/* Posicionamiento flotante - Float */
+/* Permite posicionar contenedores dentro de otros contendores 
+en donde quieras. */
+.pos-float-parent {
+    border: 5px solid royalblue;
+    color: white;
+    font-size: 20px;
+    /* Esto respeta al tamaño de los floats*/ 
+    overflow: hidden;   
+}
 
+.pos-float-child-1 {
+    background-color: brown;
+    height: 100px;
+    width: 33.3%;
+    float: left;
+}
 
+.pos-float-child-2 {
+    background-color: darkblue;
+    height: 100px;
+    width: 33.3%;
+    float: left;
+    
+}
+
+.pos-float-child-3 {
+    background-color: darkorange;
+    height: 100px;
+    width: 33.3%;
+    float: left;
+}
+
+.pos-float-child-4 {
+    background-color: yellowgreen;
+    height: 50px;
+    width: 100%;
+    /* ESta opción respeta los float anteriores, 
+    respeta su espacio y empieza en una linea nueva. */
+    clear: both;
+    
+}
+
+.pos-float-child-5 {
+    background-color: red;
+    height: 50px;
+    width: 33,3%;
+    float: right;    
+}
+
+.pos-float-child-6 {
+    background-color: blueviolet;
+}
+
+/* Overflow - Gestión del desbordamiento del contenido */
+[class^="overflow-parent"] {
+    width: 200px;
+    height: 100px;
+    border: 3px dashed black;
+    margin-bottom: 150px;
+}
+
+.overflow-parent-1 {
+    overflow: hidden;
+
+}
+.overflow-parent-2 {
+    overflow: visible;
+
+}
+.overflow-parent-3 {
+    overflow:scroll;
+
+}
+
+/* Tamaño de Cajas (box-sizing) */
+
+.box-sizing-parent {
+    width: 200px;
+    height: 200px;
+    border: 10px solid goldenrod;
+
+}
+.box-sizing-child {
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    border: 10px solid darkolivegreen;
+    /* valor por defecto */
+    box-sizing: content-box;
+}
+.border-box{
+    margin-top:10px;
+    box-sizing: border-box;
+}

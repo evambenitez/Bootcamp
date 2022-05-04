@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>chuletacss</title>
     <link rel="stylesheet" href="chuletastyle.css">
 </head>
+
 <body>
 
     <h2>Tipos de Display: none, inline, block, inline-block</h2>
@@ -38,7 +40,86 @@
     <!-- Para centrar a lo ancho, ejemplo (eje x - horizontalmente) -->
 
     <h2>Centrar a lo ancho</h2>
-    <div class="x-center"></div>
+    <div class="x-center rectangle"></div>
 
+    <!-- Relativa -->
+    <h2>Posicion relativa</h2>
+    <div class="pos-relative rectangle"></div>
+
+    <!-- Para centrar verticalmente (eje y ) absolute -->
+    <!-- Absolute. respecto a su contendor padre -->
+    <h2>Posicion absoluta</h2>
+    <div class="pos-absolute-parent">
+        <div class="pos-absolute-child"></div>
+    </div>
+    <!-- Poscionamiento Fijo - Fixed - (me acompaña en el scroll) -->
+    <h2>Posicionamiento Fijo - Boton fijo</h2>
+    <div class="pos-fixed">
+        <a href="#">Boton fijo</a>
+    </div>
+
+    <!-- Posicionamiento sticky - Alterna entre relativa y fixed -->
+    <h2>Posicionamiento Sticky</h2>
+    <div class="pos-sticky">
+        <a href="#">Inicio</a>
+        <a href="#">Contacto</a>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iste quasi atque asperiores saepe aspernatur nesciunt
+        natus illo quod totam. Non modi, excepturi dicta voluptatem doloribus quidem quis et corporis animi autem facilis
+        hic! Nostrum corrupti et iure voluptate beatae, dolore quia fuga eum! Totam doloribus ea earum neque rerum. Tempora
+        dolore autem vitae! Facilis consequuntur adipisci nam architecto, cupiditate culpa, consequatur dignissimos quam
+        temporibus molestiae magnam eligendi tempore voluptas accusamus inventore earum ullam! Illum velit sed totam ad iure
+        ipsum? Nihil architecto provident et quod libero incidunt laborum nobis excepturi veniam qui! Voluptatem repellendus
+        incidunt, beatae blanditiis consectetur culpa.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iste quasi atque asperiores saepe aspernatur nesciunt
+        natus illo quod totam. Non modi, excepturi dicta voluptatem doloribus quidem quis et corporis animi autem facilis
+        hic! Nostrum corrupti et iure voluptate beatae, dolore quia fuga eum! Totam doloribus ea earum neque rerum. Tempora
+        dolore autem vitae! Facilis consequuntur adipisci nam architecto, cupiditate culpa, consequatur dignissimos quam
+        temporibus molestiae magnam eligendi tempore voluptas accusamus inventore earum ullam! Illum velit sed totam ad iure
+        ipsum? Nihil architecto provident et quod libero incidunt laborum nobis excepturi veniam qui! Voluptatem repellendus
+        incidunt, beatae blanditiis consectetur culpa.</p>
+
+<!-- Posicionamiento Flotante - Float-->
+<!-- Los elementos flotantes pierden su posicion, con
+clear:both respetamos ese espacio. -->
+
+<!-- Indicando en el div padre: overflow: hidden, también nos respetaria
+a los flotantes, sin necesidad del clearfix. -->
+<H2>Posicionamiento flotante - Float</H2>
+<div class="pos-float-parent">
+    <div class="pos-float-child-1">Caja 1</div>
+    <div class="pos-float-child-2">Caja 2</div>
+    <div class="pos-float-child-3">Caja 3</div>
+    <div class="pos-float-child-4">Caja 4</div>
+    <div class="pos-float-child-5">Caja 5</div>
+</div>
+
+<div class="pos-float-child-6">Caja 6</div>
+
+<h2>Overflow - Gestión del desbordamiento del contenido</h2>
+<h3>overflow: hidden</h3>
+<div class="overflow-parent-1">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur laboriosam atque enim nisi autem praesentium quo amet animi ipsum in consectetur cum aut beatae quasi ratione eligendi, neque itaque recusandae.</p>
+</div>
+<h3>overflow: visible</h3>
+<div class="overflow-parent-2">
+    <p>Illum repellat corporis odit dolore in, maiores nostrum soluta temporibus officia est natus rerum delectus ad, a rem error quia iste possimus sapiente? Sequi, sapiente modi incidunt omnis illum doloremque.</p>
+</div>
+<h3>overflow:scroll </h3>
+<div class="overflow-parent-3">
+    <p>Quia nihil odio dolor natus recusandae, voluptatem quae sapiente labore illo nisi alias facilis. Eum necessitatibus dolorum quas neque accusamus deserunt dolore esse, odit sit expedita, cumque sapiente vel! Ex.</p>
+</div> 
+
+<h2>Tamaño de Cajas (box-sizing)</h2>
+<div class="box-sizing-parent">
+    <div class="box-sizing-child">content-box</div>
+    <div class="box-sizing-child border-box">border-box</div>
+</div>
+
+
+    <!-- Con este div abrimos hueco para hacer scroll -->
+    <div style="height: 1000px;"></div>
 </body>
+
 </html>
