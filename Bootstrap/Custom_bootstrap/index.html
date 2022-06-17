@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap_chuleta copia</title>
+    
+    <!-- Relacionamos con nuestra hoja de stylos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Contenido -->
+
+    <!-- mt-3 significa margin top (espacio entre el titulo y el body) de 3px (van del 0 al 5)-->
+    <div class="container mt-3">
+        <h1>Contenedores Responsives</h1>
+    </div>
+    <!-- Creamos varios div clase container y seleccionamos un color de fondo bg- 
+        y un borde-->
+    <div class="container bg-light border">Contenedor por defecto</div>
+    <div class="container-sm bg-success border">Contenedor small breakpoint</div>
+    <div class="container-md bg-warning border">Contenedor medium breakpoint</div>
+    <div class="container-lg bg-danger border">Contenedor large breakpoint</div>
+    <div class="container-xl bg-success border">Contenedor extra large breakpoint XL</div>
+    <div class="container-xxl bg-warning border">Contenedor extra extra large breakpoint XXL</div>
+
+    <div class="container mt-4">
+    <h1>Bootstrap 4 Grid System</h1>
+    <div class="row">
+        <div class="col-6 bg-light border">col6</div>
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+    </div>
+    <!-- < !-- my-3 = margin botom y margin top a la vez --> -->
+    <div class="row my-3">
+        <div class="col-2 bg-light border">col2</div>
+        <div class="col-2 bg-light border">col2</div>
+        <div class="col-8 bg-light border">col8</div>
+    </div>
+
+    <div class="row">
+        <!-- .col-1.bg-light border{col-1}*12 Shortcard--> 
+        <div class="col-1 bg-light border">col-1</div>
+        <div class="col-1 bg-light border">col-1</div>
+        <div class="col-1 bg-light border">col-1</div>
+        <div class="col-1 bg-light border">col-1</div>
+        <div class="col-1 bg-light border">col-1</div>
+        <div class="col-1 bg-light border">col-1</div>
+        <div class="col-1 bg-light border">col-1</div>
+        <div class="col-1 bg-light border">col-1</div>
+        <div class="col-1 bg-light border">col-1</div>
+        <div class="col-1 bg-light border">col-1</div>
+        <div class="col-1 bg-light border">col-1</div>
+        <div class="col-1 bg-light border">col-1</div>
+    </div>
+
+    <h3 class="mt-3">Responsive - Breakpoints</h3>
+    <div class="row">
+        <div class="col-sm-6 col-lg-4 col-xl bg-light border">col</div>
+        <div class="col-sm-6 col-lg-4 col-xl bg-light border">col</div>
+        <div class="col-sm-6 col-lg-4 col-xl bg-light border">col</div>
+        <div class="col-sm-6 col-lg-12 col-xl bg-light border">col</div>
+    </div>
+
+    <!-- row-cols -Igual a lo anterior pero de una tirada -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+    </div>
+   
+    <h3 class="mt-3">Alineamiento vertical (flex- aling-items-start)</h3>
+    <!-- sized es una clase nuestra, creada en nuestro css para darle altura al div-->
+    <div class="row align-items-start border bg-secondary sized">  
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+    </div>
+
+    <h3 class="mt-3">Alineamiento vertical (flex aling-items-center)</h3>
+    <div class="row align-items-center border bg-secondary sized">  
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+    </div>
+
+    <h3 class="mt-3">Alineamiento vertical (flex aling-items-end)</h3>
+    <div class="row align-items-end border bg-secondary sized">  
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+    </div>
+
+    <h3 class="mt-3">Alineamiento vertical (flex aling-items-stretch (por defecto))</h3>
+    <div class="row align-items-stretch border bg-secondary sized">  
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+    </div>
+
+    <!-- align-self sobreescribe el alineamiento del padre -->
+    <h3 class="mt-3">Alineamiento vertical (flex aling-self)</h3>
+    <div class="row justify-content-start border bg-secondary sized">  
+        <div class="col align-self-start bg-light border">col</div>
+        <div class="col align-self-center bg-light border">col</div>
+        <div class="col align-self-end bg-light border">col</div>
+        <div class="col align-self-stretch bg-light border">col</div>
+    </div>
+
+    <h3 class="mt-3">Alineamiento horizontal (flex- justify-content start (por defecto))</h3>
+    <!-- INICIO .row.border.bg-light*5>.border.bg-light.col-2{col}*3 -->
+    <div class="row justify-content-start border mb-2 bg-success">
+        <div class="border bg-light col-2">col</div>
+        <div class="border bg-light col-2">col</div>
+        <div class="border bg-light col-2">col</div>
+    </div>
+    <h3 class="mt-3">Alineamiento horizontal (flex- justify-content center)</h3>
+    <div class="row justify-content-center border mb-2 bg-success">
+        <div class="border bg-light col-2">col</div>
+        <div class="border bg-light col-2">col</div>
+        <div class="border bg-light col-2">col</div>
+    </div>
+    <h3 class="mt-3">Alineamiento horizontal (flex- justify-content end)</h3>
+    <div class="row justify-content-end border mb-2 bg-success">
+        <div class="border bg-light col-2">col</div>
+        <div class="border bg-light col-2">col</div>
+        <div class="border bg-light col-2">col</div>
+    </div>
+    <h3 class="mt-3">Alineamiento horizontal (flex- justify-content around)</h3>
+    <div class="row justify-content-around border mb-2 bg-success">
+        <div class="border bg-light col-2">col</div>
+        <div class="border bg-light col-2">col</div>
+        <div class="border bg-light col-2">col</div>
+    </div>
+    <h3 class="mt-3">Alineamiento horizontal (flex- justify-content between)</h3>
+    <div class="row justify-content-between border mb-2 bg-success">
+        <div class="border bg-light col-2">col</div>
+        <div class="border bg-light col-2">col</div>
+        <div class="border bg-light col-2">col</div>
+    </div>
+     <!--FIN  .row.border.bg-light*5>.border.bg-light.col-2{col}*3 -->
+
+     <h3 class="mt-3">Display (display none)</h3>
+     <!-- Display (.d-{value} for xs... o .d-{breakpoint}-{value} for...sm/md/lg/xl/xxl) -->
+     <div class="row border mb-2 bg-success">
+         <div class="border bg-light col d-none d-lg-block d-xl-none">col d-none d-lg-block d-xl-none</div>
+         <div class="border bg-light col">col</div>
+         <div class="border bg-light col">col</div>
+     </div>
+
+     <!-- Tamaños (w-25-100% o w-auto / h-25-100% o h-auto)) y margenes -->
+     <h3 class="mt-3">Tamaños (width-height y padding (p))</h3>
+     <div class="row border bg-danger sized w-50 pl-5 pr-3">
+         <div class="border bg-light col h-75 mt-2">col</div>
+         <div class="border bg-light col h-25">col</div>
+         <div class="border bg-light col h-50">col</div>
+     </div>
+
+    <br>
+    <div class="container"><h1>Componentes de Bootstrap</h1>
+        <div class="alert alert-primary" role="alert">
+            A simple primary alert—check it out!
+          </div>
+          <div class="alert alert-secondary" role="alert">
+            A simple secondary alert—check it out!
+          </div>
+          <div class="alert alert-success" role="alert">
+            A simple success alert—check it out!
+          </div>
+          <div class="alert alert-danger" role="alert">
+            A simple danger alert—check it out!
+          </div>
+          <div class="alert alert-warning" role="alert">
+            A simple warning alert—check it out!
+          </div>
+          <div class="alert alert-info" role="alert">
+            A simple info alert—check it out!
+          </div>
+          <div class="alert alert-light" role="alert">
+            A simple light alert—check it out!
+          </div>
+          <div class="alert alert-dark" role="alert">
+            A simple dark alert—check it out!
+          </div>
+
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          
+<!-- La clase fixed-top de este navbar lo posiciona arriba del todo (ver css) -->
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+          <br>
+    </div>
+
+    <!-- Fin contenido -->
+
+    <!-- Scripts - Siempre al final del body -->
+    <script src="/Bootstrap/bootstrap-4.6.1-dist/js/jquery.slim.min.js"></script>
+    <script src="/Bootstrap/bootstrap-4.6.1-dist/js/popper.min.js"></script>
+    <script src="/Bootstrap/bootstrap-4.6.1-dist/js/bootstrap.js"></script>
+    <!-- Fin Scripts -->
+</body>
+</html>

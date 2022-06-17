@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_4_CSS</title>
+    <link rel="stylesheet" href="styleejercicio4.css">
+</head>
+<body>
+    <!-- Inicio Cabecera - Header -->
+    <header>
+        <!-- Asignamos clase container para que tenga el formato asignado en css --> 
+        <div class="top-banner container">
+            <h1>LOGOTIPO</h1>
+            <!-- Formulario de busqueda -->
+            <form action="#">
+                <label for="searchInput">Buscar</label>
+                <input type="text" id="searchInput" name="searchInput">
+            </form>
+        </div>
+        <!-- Nav - Menu de navegación -->
+        <!-- Asignamos clase container para que tenga también el formato asignado en css -->
+        <nav class="container">
+            <a href="#">Lorem</a>
+            <a href="#">Ipsum</a>
+            <a href="#">dolor</a>
+            <a href="#">Sit</a>
+            <a href="#">Amet</a>
+        </nav>    
+    </header>
+<!-- Fin de la Cabecera - Header -->
+
+<!-- Aside - Inicio Menu lateral izquierdo -->
+<!-- Asignamos clase container para que tenga también el formato asignado en css -->
+    <aside class="container">
+        <!-- Creamos un div para noticias, con su clase -->
+        <div class="news">
+            <h3><a href="#">Noticias</a></h3>
+            <span>dd/mm/aaaa <a href="#">Lorem dolor sit amet.</a></span>
+            <span>dd/mm/aaaa <a href="#">Lorem dolor sit amet.</a></span>
+            <span>dd/mm/aaaa <a href="#">Lorem dolor sit amet.</a></span>
+            <span>dd/mm/aaaa <a href="#">Lorem dolor sit amet.</a></span>
+            <span>dd/mm/aaaa <a href="#">Lorem dolor sit amet.</a></span>
+            
+            <h3><a href="#">Enlaces Relacionados</a></h3>
+            <a href="#">Lorem dolor sit amet.</a>
+            <a href="#">Lorem dolor sit amet.</a>
+            <a href="#">Lorem dolor sit amet.</a>
+        </div>
+        <!-- Creamos un div para Ads, con su clase -->
+        <div class="ads">
+            <h3><a href="#">Publicidad</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore blanditiis nam odio eveniet explicabo atque
+                architecto. Error quod neque quisquam? Dolor numquam officiis possimus, placeat facere similique atque eaque sint
+                quod.
+            </p>
+            <a href="#">Seguir leyendo...</a>
+        </div>
+    </aside>
+
+    <!-- Section - Parte Central -->
+     <!-- Asignamos clase container para que tenga también el formato asignado en css -->
+    <section class="container">
+        <!-- Creamos un div con su clase. 
+        Y añadimos container para darle formato asignado en css -->
+        <div class="main-content container">
+            <article>
+                <h2>Lorem ipsum dolor consectetur adipisicing elit</h2>
+                <img src="imagenes_css/placeholder.png" width="100px" alt="placeholder">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis laboriosam, error dolorum doloribus nisi qui ullam
+                    consequuntur odio eveniet quibusdam ratione nam necessitatibus optio neque asperiores facilis! Voluptas sunt a
+                    asperiores repellat dolores consectetur eos, illum, nulla voluptate eum, voluptates debitis!nulla voluptate eum.
+                </p>
+                <a href="#">Seguir leyendo...</a>
+            </article>
+            <article>
+                <h2>Lorem ipsum dolor consectetur adipisicing elit</h2>
+                <img src="imagenes_css/placeholder.png" width="100px" alt="placeholder">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis laboriosam, error dolorum doloribus nisi qui ullam
+                    consequuntur odio eveniet quibusdam ratione nam necessitatibus optio neque asperiores facilis! Voluptas sunt a
+                    asperiores repellat dolores consectetur eos, illum, nulla voluptate eum, voluptates debitis!nulla voluptate eum.
+                </p>
+                <a href="#">Seguir leyendo</a>
+            </article>
+        </div>
+
+        <!-- Para el lateral derecho, que está dentro de la misma 
+            sección, creamos otro div con su clase. 
+        Y añadimos container para darle formato asignado en css -->
+        <div class="side-content container">
+            <article>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum fugiat sapiente ullam necessitatibus doloribus.
+                </p>
+                <a href="#">Seguir leyendo</a>
+            </article>
+            <article>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum fugiat sapiente ullam necessitatibus doloribus.
+                </p>
+                <a href="#">Seguir leyendo</a>
+            </article>
+        </div>
+    </section>
+<!-- Creamos este div vacio con clear para que el footer no colapse con 
+los flotantes anteriores y lo cree como un bloque nuevo y entero
+En css debemos poner clear both como su estilo. -->
+    <div class="clear"></div>
+
+    <!-- Footer - Pie de pagina -->
+    <!-- añadimos clase container para darle formato asignado en css --> 
+    <footer class="container">
+        <a href="#">Lorem </a>
+        <a href="#">Lorem </a>
+        <a href="#">Lorem </a>
+        <a href="#">Lorem </a>
+        <a href="#">Lorem </a>
+        <a href="#">Lorem </a>
+        <span>&copy; Copyright Lorem, ipsum 2022</span>
+    </footer> 
+</body>
+</html>

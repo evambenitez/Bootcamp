@@ -1,0 +1,88 @@
+/* General , le ponemos box-sizing:border box para que respete
+el tamaño que le asigmos a cada caja, incluyendo sus bordes y paddings*/
+* {
+    box-sizing: border-box;
+}
+/* Creamos la clase container y se la asignamos a todos los elementos
+que tendrán el mismo estilo de borde y de padding. */
+.container {
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+
+}
+
+.top-banner {
+    position: relative;
+}
+
+/* Estilo del input del formulario de busqueda
+le asignamos posicion absoluta y a su padre(div top-banner), posición relativa) */
+.top-banner form{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -17px;
+    
+}
+
+.top-banner Input {
+    height: 34px; /*para que no dependa del navegador*/
+   
+}
+
+/* Aside - Menu lateral izquierdo */
+/* Con display:block consigo ponerlo en la misma línea, enlaces y span de la clase news. */
+.news > a, .news span {
+    display: block;
+}
+
+aside {
+    /* lo hacemos flotante a la izquierda para que deje espacio a la sección
+    central, que flota a la derecha. */
+    float: left;
+    width: 25%;
+}
+
+/* Section - Contenido central */
+section {
+    float: right;
+    width: 73%;
+}
+
+.main-content {
+    float: left;
+    width: 75%;
+}
+
+/* Flotamos la imagen a la izquierda, el texto se adaptará */
+.main-content img {
+    float: left;
+    margin-right: 20px;
+}
+/* Section - Contenido lateral derecho del central */
+.side-content {
+    float: right;
+    width: 24%;
+}
+
+/* Damos este estilo al clear, creado en el div vacio, 
+para que no colapse el footer y nos respete sus márgenes
+El footer se creará como una linea nueva y ocupará el espacion que le corresponde.*/
+.clear {
+    clear: both;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+}
+
+footer span {
+    /* Flotamos la frase del copyright a la derecha */
+    float: right;
+}

@@ -1,0 +1,31 @@
+.container-parent {
+    display:grid;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: "child-1 child-1"
+                         "child-2 child-3"
+                         "child-2 child-4"
+                         "child-5 child-5"  
+    
+}
+
+.container-parent .child-1 {
+    grid-area: child-1;
+    background-color: aqua; 
+} 
+.container-parent .child-2 {
+    grid-area: child-2;
+    background-color: violet; 
+}
+.container-parent .child-3 {
+    grid-area: child-3;
+    background-color: blue; 
+}
+.container-parent .child-4 {
+    grid-area: child-4;
+    background-color: lightskyblue; 
+}
+.container-parent .child-5 {
+    grid-area: child-5;
+    background-color: coral; 
+}

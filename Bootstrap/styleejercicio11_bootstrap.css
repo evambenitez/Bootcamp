@@ -1,0 +1,24 @@
+.carousel-item {
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-item:nth-child(1){
+    background-image: url(img_bootstrap/car1.jpg) ;
+
+}
+
+.carousel-item:nth-child(2){
+    background-image: url(img_bootstrap/car2.jpg);
+
+}
+
+.carousel-item:nth-child(3){
+    background-image: url(img_bootstrap/car3.jpg);
+
+}
+
+
+
+

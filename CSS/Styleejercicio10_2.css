@@ -1,0 +1,59 @@
+
+body {
+    box-sizing: border-box;   
+} 
+
+.container_parent {
+    display: flex;
+    width: 900px;
+    margin: 5vw auto;
+    box-shadow: 5px 0px 5px gray;    
+}
+.aside_left img {
+    float: left;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aside_right {
+    float: right;
+    width: auto;
+    margin: 0 auto; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;      
+}
+
+.form input {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    height: 25px;         
+}
+
+label, input {
+    margin-bottom: 5px;
+}
+
+.log_in {
+    background-color: #7e3af2;
+    color: white;
+    margin-top: 10px;
+    width: 102%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.button button {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.footer a {
+    display: block;
+    color: #7e3af2;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}

@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+}
+
+.container {
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+.top-banner {
+    position: relative;
+}
+
+.top-banner form {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -17px;
+}
+ 
+.top-banner input {
+    height: 34px;
+}
+
+nav {
+    margin-bottom: 10px;
+}
+
+.news {
+    margin-bottom: 20px;
+}
+
+.news > a, .news > span {
+    display: block;
+}
+
+aside {
+    float: left;
+    width: 25%;
+}
+
+aside h3, aside p, .side-content h2, .side-content p {
+    margin: 0;
+}
+
+section.container {
+    float: right;
+    width: 73%;
+    padding: 0;
+}
+
+.main-content {
+    float: left;
+    width: 75%;
+}
+
+.main-content img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.side-content {
+    float: right;
+    width: 24%;
+}
+
+.side-content > div:first-child {
+    margin-bottom: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer span {
+    float: right;
+}

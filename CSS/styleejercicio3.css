@@ -1,18 +1,22 @@
-.tabla li {
+ul {
+    padding: 0;
+    width: 50%;
+}
+
+ul li {
+    color:#333;
     background-color: rgb(204, 203, 203);
     border: 1px solid rgb(128, 124, 124);
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-right:900px;
-    margin-left: 0px;
+    padding: 4px;
+    cursor: pointer;
+    list-style-position: inside;
+    list-style-image:url(imagenes_css/fast-forward-button.png);
 }
 
-.tabla li img{
-    padding-left: 5px;
-    padding-right: 5px;
 
-}
-
-.tabla li a {
-    text-decoration: none;
+/* Con lo propiedad hover cambiamos el color al ponernos encima con el ratón. */
+/* Con list-style-image y seleccionando la imagen, se cambiará al poner encima el raton. */
+ul>li:hover {
+    color:red;
+    list-style-image:url(#);
 }

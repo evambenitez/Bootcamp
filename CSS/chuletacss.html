@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chuletacss</title>
     <link rel="stylesheet" href="chuletastyle.css">
+    <!-- script de iconos -->
+    <!-- <script src="https://kit.fontawesome.com/c83b95da8e.js" crossorigin="anonymous"></script> -->
+    <link href="Icons/css/all.css" rel="stylesheet">
 </head>
+
+
 
 <body>
 
@@ -116,6 +121,137 @@ a los flotantes, sin necesidad del clearfix. -->
     <div class="box-sizing-child">content-box</div>
     <div class="box-sizing-child border-box">border-box</div>
 </div>
+
+<h2>Pseudoselectores, pseudo-clases :  pseudo-elementos ::</h2>
+<!-- :visited, :hover, :focus -->
+<!-- ::first-line, ::first-letter,  -->
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe exercitationem vel officiis numquam excepturi iure
+    explicabo magnam culpa unde doloremque temporibus sint animi ullam, dolorem, suscipit vero ipsa voluptates
+    architecto veniam facilis, totam aliquid. Corporis at suscipit eos. Quaerat animi consequuntur earum quasi culpa
+    deserunt iure velit pariatur ex!</p>
+
+    <!-- Medias Queries - Responsive -->
+<h2>Medias queries - Responsive</h2>
+<div class="responsive"></div>
+
+<h2>Ejemplos base de medias queries</h2>
+<p>
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {...}
+</p>
+
+<p>
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {...}
+</p>
+
+<p>
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {...}
+</p>
+
+<p>
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {...}
+</p>
+
+<p>
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {...}
+</p>
+/* <!-- Flexbox - Posicionar Cajas sin Float. --> */
+ <!-- /* Propiedades a nivel del contenedor */ -->
+<!-- Flexbox - Posicionar Cajas sin Float. Solo una dimensión, o filas o columnas -->
+<H2>Flexbox - Fácil posicionamiento de Cajas</H2>
+<h3>Display:flex (activa flexbox en el contenedor</h3>
+<p>Contenedor flex (contenedor) y elementos flex(elementos del contenedor)</p>
+<p>Flex-direction:row o row-reverve (posicionar en filas, por defecto)</p>
+<p>Para row (main axis):
+    justify-content: flex-start, flex-end, center, space-between, space-around, space-evenly</p>
+<p>Flex-direction:column o column-reverse (posionar en columnas)</p>
+<p>Para column (cross axis):
+    aling-items: stretch, flex-start, flex-end, center</p>
+  <!-- /* Propiedades a nivel de etiquetas */ -->  
+  <h2>Flexbox para etiquetas</h2> 
+  
+
+<!-- shorcart= .flex-child-$*3>h2{Box $} -->
+<div class="flex-parent">
+    <div class="flex-child-1">
+        <h2>Box 1</h2>
+    </div>
+    <div class="flex-child-2">
+        <h2>Box 2</h2>
+    </div>
+    <div class="flex-child-3">
+        <h2>Box 3</h2>
+    </div>
+
+</div>
+
+<!-- CSS GRID - Display grid - Rejilla-->
+<h2>CSS GRID básico con medias queries- Posicionamiento en dos dimensiones (filas y columnas)</h2>
+<div class="grid-parent">
+    <div class="grid-child-1"><h2>Box 1</h2></div>
+    <div class="grid-child-2"><h2>Box 2</h2></div>
+    <div class="grid-child-3"><h2>Box 3</h2></div>
+    <div class="grid-child-4"><h2>Box 4</h2></div>
+    <div class="grid-child-5"><h2>Box 5</h2></div>
+    <div class="grid-child-6"><h2>Box 6</h2></div>
+</div>
+
+<h2>CSS Grid por ĺíneas</h2>
+<div class="grid-parent-lineas">
+    <div class="grid-child-1"><h2>Box 1</h2></div>
+    <div class="grid-child-2"><h2>Box 2</h2></div>
+    <div class="grid-child-3"><h2>Box 3</h2></div>
+    <div class="grid-child-4"><h2>Box 4</h2></div>
+    <div class="grid-child-5"><h2>Box 5</h2></div>
+    <div class="grid-child-6"><h2>Box 6</h2></div>
+</div>
+
+<h2>CSS Grid por Areas</h2>
+<div class="grid-parent-areas">
+    <div class="grid-child-1"><h2>Box 1</h2></div>
+    <div class="grid-child-2"><h2>Box 2</h2></div>
+    <div class="grid-child-3"><h2>Box 3</h2></div>
+    <div class="grid-child-4"><h2>Box 4</h2></div>
+    <div class="grid-child-5"><h2>Box 5</h2></div>
+</div>
+
+<!-- Ponemos el script del CSN en el header, luego en la web de los iconos, 
+    copiamos y pegamos el código del icono, le asignamos nombre "icon-1" y 
+podemos darle stylo en css-->
+<h2>Iconos - Icons</h2>
+<i class="fa-brands fa-42-group icon-1"></i>
+<br>
+<i class="fa-solid fa-anchor icon-2"></i>
+<br>
+<i class="fa-brands fa-angellist icon-3"></i>
+
+<h2>Gradientes o degradados y Sombras - Puede ser un gradiente lineal o radial</h2>
+<div class="gradient-1"></div>
+<div class="gradient-2"></div>
+<div class="gradient-3"></div>
+<div class="gradient-4"></div>
+
+<h2>Transformaciones - transform</h2>
+<div class="transform"></div>
+
+<h2>Transiciones - transition (movemos de A a B)</h2>
+<div class="transition"><span>Click me</span></div>
+
+<h2>Amimaciones - text-animation</h2>
+<div class="text-animation">
+    <h3>Codespace</h3>
+</div>
+
+<h2>Bootstrap 4- Front-end framework</h2>
+<p>framework, nos da muchas cosas hechas de html y css, incluso plugins de javascript</p>
+
+
+
 
 
     <!-- Con este div abrimos hueco para hacer scroll -->

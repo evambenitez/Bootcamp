@@ -1,0 +1,75 @@
+.body {
+    box-sizing: border-box;
+    
+}
+
+.login {
+    display: flex;
+    width: 900px;
+    margin: 5vw auto;
+    font-family: Inter, system-ui, Roboto, Helvetica, arial;
+    background: rgb(238, 238, 222);
+    box-shadow: 5px 0px 5px black; 
+    
+}
+
+.aside_right {
+    float: right;
+    padding-top: 30px;
+    width: 80%;
+    padding-left: 20px;
+    
+}
+
+
+.aside_form input {
+    display: block;
+    border-radius: 5px;
+    width: 80%;
+    height: 30px;
+    
+   
+}
+
+.twitter {
+    display: block;
+    border-radius: 5px;
+    width: 80%;
+    height: 35px;
+    margin-bottom: 15px;
+    
+}
+
+
+.github {
+    border-radius: 5px;
+    width: 80%;
+    height: 35px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.footer a{
+    display: block;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    color: #7e3af2;
+    
+}
+
+.log_in {
+    background-color: #6c2bd9;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    width: 83%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .login img{
+        float: left;
+
+    }
+} 

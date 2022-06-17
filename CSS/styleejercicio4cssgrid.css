@@ -1,0 +1,70 @@
+/* Creamos la clase container y se la asignamos a todos los elementos
+que tendrán el mismo estilo de borde y de padding. */
+.container {
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+
+}
+
+.top-banner {
+    position: relative;
+}
+
+/* Estilo del input del formulario de busqueda
+le asignamos posicion absoluta y a su padre(div top-banner), posición relativa) */
+.top-banner form{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -17px;
+    
+}
+
+.top-banner Input {
+    height: 34px; /*para que no dependa del navegador*/
+   
+}
+
+
+
+.container-parent {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "container1 container2 container3" 
+                                 
+}
+
+.container-parent .container1 {
+    padding-left: 10px;
+    border: 2px solid grey;
+    background-color: aquamarine;
+}
+
+.container-parent .container2 {
+    background-color: burlywood;
+}
+
+.container-parent .container3 {
+    background-color: beige;
+}
+
+footer {
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid grey;
+    height: 40px;
+   
+}
+
+span {
+    float: right;
+}
+

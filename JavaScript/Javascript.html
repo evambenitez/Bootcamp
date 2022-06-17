@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_chuleta</title>
+    <style>
+        a {
+            font-size: 2em;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Procesar JavaScript</h1>
+   <a href="#" onclick="alert('Hola desde un script inline')">Inline script (desaconsejado, sólo se usa en reacht)</a>
+   <a href="#">Internal script (ver etiqueta script de mi html)</a>
+   <a href="#">External script (lo enlazamos a nuestro main js</a>
+
+
+
+
+<!-- Script Interno -->
+    <script>
+        function saludo () {
+            alert("Hola desde un script interno");
+            console.log ("has hecho click");
+        }
+        document.getElementsByTagName("a").item(1).addEventListener("click", saludo);
+    </script>
+
+<!-- Script externo (el que usaremos por defecto) -->
+    <script src="js/main.js"></script>
+</body>
+</html>

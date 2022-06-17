@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+    color: rgb(173, 173, 173);
+}
+
+/* Estilos genéricos para dar color y redondear */
+.box {
+    background-color: rgb(202, 202, 202);
+    border-radius: 10px;
+}
+
+/* Contenedor flex. Encargado de distribuir todos los elementos.*/
+div.card {
+    width: 300px;
+    height: 500px;
+    background-color: #ddd;
+    margin: auto;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Elemento flex que cogerá todo el espacio disponible  */
+.content {
+    flex-grow: 1;
+    width: 100%;
+}
+
+/* Estilos individuales */
+.content > div {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.picture {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.button {
+    height: 25px;
+    width: 25%;
+}
