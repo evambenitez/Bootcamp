@@ -10,13 +10,83 @@
             font-size: 2em;
             display: block;
         }
+
+        .abuelo {
+            height: 500px;
+            background-color: brown;
+        }
+
+        .abuelo, .abuelo div {
+            border: 5px solid black;
+            box-sizing: border-box;
+            display: flex;
+            gap: 25px;
+            padding: 25px;
+            flex-wrap: wrap;
+        }
+
+        .padre {
+            background-color: cadetblue;
+        }
+
+        .hijo {
+            background-color: burlywood;
+        }
+
+        .bg-violet {
+            background-color: violet;
+        }
+
+        .bg-red {
+            background: red;
+        }
+
+        #container {
+            height: 100px;
+            border: 3px solid gray;
+        }
+
+
     </style>
 </head>
 <body>
-    <h1>Procesar JavaScript</h1>
+<h1>Procesar JavaScript</h1>
    <a href="#" onclick="alert('Hola desde un script inline')">Inline script (desaconsejado, sólo se usa en reacht)</a>
    <a href="#">Internal script (ver etiqueta script de mi html)</a>
    <a href="#">External script (lo enlazamos a nuestro main js</a>
+
+ <h2>Acceso al DOM</h2>
+<div class="abuelo" id="abuelo">
+
+    <div class="padre" id="padre1">
+
+        <div class="hijo" id="hijo1"><span>Hijo1</span></div>
+        <div class="hijo" id="hijo2">Hijo2</div>
+    </div>
+
+    <div class="padre" id="padre2">
+
+        <div class="hijo" id="hijo3">Hijo1</div>
+        <div class="hijo" id="hijo4">Hijo2</div>
+    </div>
+
+</div>
+
+<h1>Eventos</h1>
+<div id="container">
+    <button>Cambiar de color</button>
+</div>
+
+
+<label for="emailInput">Introduce tu email</label>
+<input type="email" id="emailInput">
+
+<h1>Coordenadas del Ratón del body del HTML</h1>
+
+
+
+
+<div style="height:1000px"></div>
 
 
 
@@ -27,10 +97,12 @@
             alert("Hola desde un script interno");
             console.log ("has hecho click");
         }
-        document.getElementsByTagName("a").item(1).addEventListener("click", saludo);
+         document.getElementsByTagName("a").item(1).addEventListener("click", saludo);
     </script>
 
 <!-- Script externo (el que usaremos por defecto) -->
     <script src="js/main.js"></script>
+    <script src="js/DOM.js"></script>
+    <script src="js/OPP.js"></script>
 </body>
 </html>
