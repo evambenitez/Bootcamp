@@ -146,7 +146,7 @@ console.log(address2);
 console.log("Fin Paso 12");
 
 // Paso 13 - Crea una funcion q se llame parseDomain() que reciba por argumento un string
-// y devuelva un objeto con dos propiedades: domain y tld. (codespaceacademy) (.com)
+// y devuelva un objeto con dos propiedades: domain y tld. (pymescomercial) (.com)
 const parseDomain = function (domainTld) {
     const array = domainTld.split(".");
     const object = {
@@ -249,26 +249,26 @@ function repetirString(a, b) {
 }
 repetirString("No haré memes del profesor.", 5);
 
-// Paso 18 con bucle for Repasar, no me funciona
+// Paso 18 con bucle for
 const repeatString = (string, n) => {
-    let repeatString = "";
+    let repeatString = " ";
     for (let i = 0; i < n; i++) {
         repeatString += string;
     }
     return repeatString;
 }
-repeatString("Haré muchas memes del profesor.", 3);
+console.log(repeatString("Haré muchas memes del profesor.", 3));
 console.log("Fin Paso 18");
 
 // Paso 19 - Crea una función q recibe un objeto con dos campos, votos positivos y 
 // votos negativos y q devuelva la cuenta final
 const getVoteCount = function (obj) {
-    return obj.upVotes - obj.downVotes;    
+    return obj.upVotes + obj.downVotes;    
 }
 
 const votes = {upVotes: 35, downVotes: 15};
 console.log((getVoteCount(votes)));
-console.log(getVoteCount({upVotes: 35, downVotes: 15}));
+console.log(getVoteCount({upVotes: 35, downVotes: 15})); // esto daría mismo resultado.
 console.log("Fin Paso 19");
 
 // Paso 20 -  Crea una función qu recibe un array de tipos de datos mezclados y q devuelve otro 

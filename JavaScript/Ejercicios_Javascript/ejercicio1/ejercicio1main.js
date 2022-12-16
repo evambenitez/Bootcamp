@@ -138,8 +138,8 @@ document.getElementById("randomButton").onclick = () => {
 
 //Apartado 11
 // Construir una lista q tenga numeros. Añadir un input donde poder añadir números y un botón.
-// Al pulsar el botón, si el nº ya existe, mostrará mensaje de error, si no existe, lo añadirá
-// al principio.
+// Al pulsar el botón, si el nº ya existe, mostrará mensaje de error, si no existe, lo añadirá.
+
 
 const ulApt11 = document.getElementById("ulApt11");
 const inputApt11 = document.getElementById("inputApt11");
@@ -177,7 +177,7 @@ buttonApt11.addEventListener("click", addToList);
 // haremos toggle o alternaremos esa clase, es decir, si está presente la quitaremos y si no
 // está, la añadiremos.
 
-document.querySelector("#toogle").onclick = (e) => e.target.classList.toggle("btn");
+document.querySelector("#toggle").onclick = (e) => e.target.classList.toggle("btn");
 
 // Ejercicio 12 continuación...
 // Refacctorizar el código para hacerlo con un único forEach

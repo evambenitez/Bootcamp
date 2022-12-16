@@ -73,7 +73,7 @@ const costeTotal = empleados.reduce((salarioAcumulado, empleado) => salarioAcumu
 console.log("7. Coste total para la empresa:", costeTotal);
 
 // Apartado 8
-// Usar los metodos reduce, map, filter y sort q determinemos oportunos e 
+// Usar los metodos reduce, map y filter q determinemos oportunos e 
 // imprimir en cada apartado:
 
 // 8.1 Despedir a los q tengan un rendimiento menor a 0.3
